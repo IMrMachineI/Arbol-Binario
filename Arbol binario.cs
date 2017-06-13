@@ -58,7 +58,14 @@ namespace Arbol_Binario
         }
         private Nodo buscar(int nodo,int padre)
         {
-            
+            if(nodo > padre.dato && padre.hijoDerecho != null)
+            {
+                return buscar(nodo,padre.hijoDerecho);
+            }
+            else if(nodo > padre.dato && padre.hijoDerecho == null)
+            {
+                
+            }
         }
         public string PreOrden()
         {
