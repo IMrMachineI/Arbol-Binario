@@ -45,6 +45,21 @@ namespace Arbol_Binario
                 }
             }
         }
+        public Nodo buscarNodo(int nodo)
+        {
+            if(raiz==null)
+            {
+                nodo = null;
+            }
+            else
+            {
+                buscar(nodo,raiz);
+            }
+        }
+        private Nodo buscar(int nodo,int padre)
+        {
+            
+        }
         public string PreOrden()
         {
             if(raiz == null)
